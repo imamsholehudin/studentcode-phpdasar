@@ -151,7 +151,7 @@ function ubah($data){
 }
 function cari($keyword){
  global $conn;
-  $query = "SELECT * FROM mahasiswa WHERE nama LIKE '%$keyword%' or nrp LIKE '%$keyword%' or email LIKE '%$keyword%' or jurusan LIKE '%$keyword%'";
+  $query = "SELECT * FROM mahasiswa WHERE nama LIKE '%$keyword%'";
   $result = mysqli_query($conn,$query);
   
   return $result;
